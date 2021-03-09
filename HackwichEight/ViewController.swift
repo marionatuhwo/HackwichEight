@@ -19,14 +19,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func sliderHasMoved(_ sender: Any) {
         
         print("The value of the slider is: \(slider.value)")
         currentValue = Int(slider.value)
     
     }
-    
 
     @IBAction func myGuessButtonPressed(_ sender: Any) {
         
@@ -39,9 +37,6 @@ class ViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        
-        
-        
     }
 }
 
